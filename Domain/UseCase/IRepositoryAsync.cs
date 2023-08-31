@@ -8,7 +8,7 @@ namespace Domain.UseCases
         Task<NoteResult> InsertAsync(TEntity entity);
         Task<NoteResult> UpdateAsync(TEntity entity);
         Task<NoteResult> RemoveAsync(Guid id);
-        Task<TEntity> GetById(Guid id);
-        Task<IEnumerable<TEntity>> GetAll();
+        Task<TEntity?> GetByIdAsync(Guid id);
+        Task<IEnumerable<TEntity>> GetAllAsync();
     }
 }
